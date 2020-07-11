@@ -71,11 +71,11 @@ if __name__ == '__main__':
                 if log["date"] != today_date:
                     raise DifferentDay  # reset
 
-        except (FileNotFoundError, DifferentDay, json.JSONDecodeError):
+        except (FileNotFoundError, DifferentDay, KeyError, json.JSONDecodeError):
             log = {"date"          : today_date,
                    "session_length": 0}
 
-        print(f'Allowed time length\t\t\t: {parse_seconds_to_str(allowed_seconds)}')
+        print(f'Allowed time length\t: {parse_seconds_to_str(allowed_seconds)}')
         print(f'Current session length\t: {parse_seconds_to_str(log["session_length"])}')
 
         if log["session_length"] < allowed_seconds:
