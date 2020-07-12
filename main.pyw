@@ -47,7 +47,7 @@ def parse_seconds_to_str(total_seconds: float = 0) -> str:
 
 
 def update_remaining_time_file(remaining: int):
-    with open(os.environ['USERPROFILE'] + "\Desktop\Time Remaining.txt", "w+") as file:
+    with open(os.environ['USERPROFILE'] + "\\Desktop\\Time Remaining.txt", "w+") as file:
         file.write("Time remaining: " + parse_seconds_to_str(remaining))
 
 
