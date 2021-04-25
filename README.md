@@ -1,5 +1,5 @@
 # time-management-tool
-A small script that shutdowns the computer when the PC exceeds the time its allowed to be open.  
+A small script that shutdowns the computer when the PC exceeds the time it's allowed to be open.
 
 # Usage
 Edit the allowed hours in the `main.pyw`.  
